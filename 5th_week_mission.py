@@ -101,6 +101,6 @@ elif money>=2000:
 else:
     print("한입만!")
 '''
-
+#dd
 
 
