@@ -105,7 +105,7 @@ t.onkeypress(escape, "Escape")
 t.listen()                              # listen을 실행시켜 주어야 키 입력 모두가 실행되어 입력키에 반응함.
 
 
-t.mainloop()
+t.mainloop()     #반복
 
 ## turtle 키보드 이벤트 처리 Mission
 '''
