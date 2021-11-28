@@ -131,8 +131,8 @@ class ShotSprite(Sprite):
         super().__init__(image, x, y)
         self.game = game
         self.dy = -20
-        self.hit_sound = pygame.mixer.Sound('./sound/hit_sound.mp3')
-        self.shot_sound = pygame.mixer.Sound('./sound/shot_sound.mp3')
+        self.hit_sound = pygame.mixer.Sound(r'D:\python J\python_intermediate\hit_sound.mp3')
+        self.shot_sound = pygame.mixer.Sound(r'D:\python J\python_intermediate\shot_sound.mp3')
         self.shot_sound.play()
 
     # 화면을 벗어나면 객체를 리스트에서 삭제한다.
@@ -194,9 +194,9 @@ class GalagaGame():
         # self.shotImage = PhotoImage(file=r"D:\My_file\Github_asdfrv20\Python_deep\python_1st_term\python_intermediate_1st term\Gallaga\image\fire.png")
         # self.shipImage = PhotoImage(file=r"D:\My_file\Github_asdfrv20\Python_deep\python_1st_term\python_intermediate_1st term\Gallaga\image\starship.png")
         # self.alienImage = PhotoImage(file=r"D:\My_file\Github_asdfrv20\Python_deep\python_1st_term\python_intermediate_1st term\Gallaga\image\alien.png")
-        self.shotImage = PhotoImage(file="../image/fire.png")
-        self.shipImage = PhotoImage(file="../image/starship.png")
-        self.alienImage = PhotoImage(file="../image/alien.png")
+        self.shotImage = PhotoImage(file=r"D:\python J\python_intermediate\image\image\fire.png")
+        self.shipImage = PhotoImage(file=r"D:\python J\python_intermediate\image\image\starship.png")
+        self.alienImage = PhotoImage(file=r"D:\python J\python_intermediate\image\image\alien.png")
         self.running = True
         self.initSprites()
         print(self.sprites)
@@ -207,8 +207,8 @@ class GalagaGame():
         master.bind("<space>", self.keySpace)
         master.bind("<Escape>", self.keyESC)
         master.bind("<Return>", self.startGame)
-        self.shot_sound = pygame.mixer.Sound('./sound/shot_sound.mp3')
-        self.start_sound = pygame.mixer.Sound('./sound/start_sound.mp3')
+        self.shot_sound = pygame.mixer.Sound(r'D:\python J\python_intermediate\shot_sound.mp3')
+        self.start_sound = pygame.mixer.Sound(r'D:\python J\python_intermediate\start_sound.mp3')
 
     # startGame() 메서드: 게임시작 메서드(Enter키의 이벤트 핸들러)
     def startGame(self, event):
